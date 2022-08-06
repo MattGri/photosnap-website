@@ -1,0 +1,57 @@
+.navigation {
+    border: 1px solid black;
+    height: 72px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        
+
+        .logo {
+            text-transform: uppercase;
+            margin-left: 10px;
+        }
+    }
+    
+
+    .itemsContainer {
+        display: flex;
+        list-style: none;
+
+        .navItem {
+            color: #000;
+            text-decoration: none;
+            // font-size: 16px;
+            text-transform: uppercase;
+            margin: 0px 35px;
+            transition: all 0.15s ease-in-out;
+
+            &:hover {
+                color: #dfdfdf;
+             
+            }
+        }
+    }
+
+    .invite {
+        background-color: #000;
+        cursor: pointer;
+        color: #fff;
+        font-size: 12px;
+        width: 158px;
+        height: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: none;
+        transition: all 0.15s ease-in-out;
+
+
+        &:hover {
+            background-color: #dfdfdf;
+            color: #000;
+        }
+    }
+}
