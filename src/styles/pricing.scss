@@ -1,0 +1,54 @@
+@import '../styles/variables.scss';
+
+.wrapper {
+    display: flex;
+
+    .pricing {
+        background-color: $pureBlack;
+        height: 490px;
+        flex: 35%;
+        padding: 175px 0px;
+    }
+
+    .line {
+        position: absolute;
+        width: 6px;
+        height: 144px;
+        left: 0px;
+        top: 245px;
+        background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    }
+
+    .container {
+        margin-left: 105px;
+
+        .title {
+            color: $pureWhite;
+            text-transform: uppercase;
+            font-size: 40px;
+            margin-bottom: 40px;
+
+        }
+
+        .text {
+            color: $lightGrey;
+            font-size: 15px;
+            line-height: 30px;
+        }
+    }
+
+    .priceImageContainer {
+       flex: 50%;
+
+
+        .priceImage {
+            width: 100%;
+            height: 490px;
+        }
+    }
+
+
+
+
+
+}

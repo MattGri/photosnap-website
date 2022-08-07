@@ -4,22 +4,23 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Features from './pages/Features';
-
+import Pricing from './pages/Pricing';
 
 function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Navigation />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/features" element={<Features />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
-  );
+    return (
+        <Router>
+            <div className="App">
+                <Navigation />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+
+                    <Route path="/pricing" element={<Pricing />} />
+
+                </Routes>
+                <Footer />
+            </div>
+        </Router>
+    );
 }
 
 export default App;

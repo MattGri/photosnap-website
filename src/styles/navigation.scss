@@ -1,5 +1,7 @@
+@import '../styles/variables.scss';
+
 .navigation {
-    border: 1px solid black;
+    border: 1px solid $pureBlack;
     height: 72px;
     display: flex;
     justify-content: space-around;
@@ -22,24 +24,23 @@
         list-style: none;
 
         .navItem {
-            color: #000;
+            color: $pureBlack;
             text-decoration: none;
-            // font-size: 16px;
             text-transform: uppercase;
             margin: 0px 35px;
             transition: all 0.15s ease-in-out;
 
             &:hover {
-                color: #dfdfdf;
+                color: $lightGrey;
              
             }
         }
     }
 
     .invite {
-        background-color: #000;
+        background-color: $pureBlack;
         cursor: pointer;
-        color: #fff;
+        color: $pureWhite;
         font-size: 12px;
         width: 158px;
         height: 40px;
@@ -50,8 +51,8 @@
 
 
         &:hover {
-            background-color: #dfdfdf;
-            color: #000;
+            background-color: $lightGrey;
+            color: $pureBlack;
         }
     }
 }
