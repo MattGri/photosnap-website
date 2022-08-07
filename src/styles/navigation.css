@@ -1,0 +1,66 @@
+.navigation {
+  border: 1px solid black;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .wrapper .logo {
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.navigation .itemsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.navigation .itemsContainer .navItem {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0px 35px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.navigation .itemsContainer .navItem:hover {
+  color: #dfdfdf;
+}
+
+.navigation .invite {
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+  font-size: 12px;
+  width: 158px;
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.navigation .invite:hover {
+  background-color: #dfdfdf;
+  color: #000;
+}
+/*# sourceMappingURL=navigation.css.map */

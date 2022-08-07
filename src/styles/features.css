@@ -1,0 +1,23 @@
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .features {
+  background-color: #000;
+  height: 490px;
+  width: 610px;
+}
+
+.wrapper .features .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.wrapper .heroImage {
+  width: 830px;
+  height: 490px;
+}
+/*# sourceMappingURL=features.css.map */
