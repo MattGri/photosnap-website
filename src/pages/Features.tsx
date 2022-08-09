@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/features.scss';
+import Beta from '../components/Beta';
 
 
 const Features = () => {
@@ -39,6 +40,7 @@ const Features = () => {
                     </div>
                 </div>
             </main>
+            <Beta />
         </>
 
     )

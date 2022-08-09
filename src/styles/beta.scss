@@ -1,0 +1,63 @@
+@import '../styles/variables.scss';
+
+
+.backgroundBeta {
+    background-image: url("../bg-beta.jpg");
+    background-size: cover;
+
+    // .lineFeatures {
+    //     position: absolute;
+    //     width: 6px;
+    //     height: 280px;
+    //     left: 0px;
+    //     top: 467px;
+    //     background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, );
+    // }
+
+    // .linePricing {
+    //     position: absolute;
+    //     width: 6px;
+    //     height: 318px;
+    //     left: 0px;
+    //     top: 567px;
+    //     background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, );
+    // }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        padding: 80px 0px;
+        justify-content: space-around;
+
+
+
+        .text {
+            color: $pureWhite;
+            text-transform: uppercase;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .rightBox {
+            display: flex;
+
+
+
+        }
+
+        .inviteButton {
+            color: $pureWhite;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 12px;
+            border: none;
+            background-color: transparent;
+            transition: 2s;
+
+            &:hover {
+                text-decoration: underline;
+                transition: 2s;
+            }
+        }
+    }
+}
