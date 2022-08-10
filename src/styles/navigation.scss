@@ -1,7 +1,6 @@
 @import '../styles/variables.scss';
 
 .navigation {
-    border: 1px solid $pureBlack;
     height: 72px;
     display: flex;
     justify-content: space-around;
@@ -28,11 +27,12 @@
             text-decoration: none;
             text-transform: uppercase;
             margin: 0px 35px;
-            transition: all 0.15s ease-in-out;
+            transition: 0.15s;
+            letter-spacing: 2px;
 
             &:hover {
                 color: $lightGrey;
-             
+              transition: 0.15s;
             }
         }
     }
@@ -47,12 +47,14 @@
         text-transform: uppercase;
         font-weight: bold;
         border: none;
-        transition: all 0.15s ease-in-out;
+        transition: 0.15s;
+        letter-spacing: 2px;
 
 
         &:hover {
             background-color: $lightGrey;
             color: $pureBlack;
+            transition: 0.15s;
         }
     }
 }
