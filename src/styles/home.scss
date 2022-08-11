@@ -1,0 +1,65 @@
+@import '../styles/variables.scss';
+
+
+.wrapper {
+    display: flex;
+
+    .stories {
+        background-color: $pureBlack;
+        padding: 170px 0px;
+        flex: 35%;
+        height: 650px;
+
+        .line {
+            position: absolute;
+            width: 6px;
+            height: 304px;
+            left: 0px;
+            top: 245px;
+
+            background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+        }
+
+        .container {
+            margin-left: 105px;
+
+            .title {
+                line-height: 48px;
+                letter-spacing: 4.17px;
+            }
+
+            .text {
+                line-height: 25px;
+                margin-bottom: 50px;
+                
+            }
+
+            .inviteContainer {
+                display: flex;
+                // align-items: center;
+
+                .inviteButton {
+                    color: $pureWhite;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    border: none;
+                    background-color: transparent;
+                    transition: 2s;
+                    letter-spacing: 2px;
+
+                    &:hover {
+                        text-decoration: underline;
+                        transition: 2s;
+                    }
+                }
+            }
+        }
+    }
+
+    .photoContainer {
+        flex: 50%;
+        background-image: url("../create-and-share.jpg");
+        background-size: cover;
+    }
+}
