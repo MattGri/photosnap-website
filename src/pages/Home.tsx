@@ -12,6 +12,12 @@ const Home = () => {
         cursor: pointer;
     `;
 
+  const CustomizedRightArrowStories = styled(ArrowRightAltIcon)`
+    color: #000;
+    margin-Left: 10px;
+    cursor: pointer;
+`;
+
   return (
     <>
       <header className='wrapper'>
@@ -39,6 +45,38 @@ const Home = () => {
         </div>
         <div className='photoContainer'></div>
       </header>
+      <main className='wrapper'>
+        <div className='blackBackground'>
+        </div>
+        <div className='storiesContainer'>
+          <h2 className='title'>beautiful
+            <br />
+            stories
+            <br />
+            every time
+          </h2>
+          <p className='text'>We provide design templates to ensure your stories
+            <br />
+            look terrific. Easily add photos, text, embed maps and
+            <br />
+            media from other networks. Then share your story with
+            <br />
+            everyone.
+          </p>
+          <div className='viewContainer'>
+            <button className='view'>view the stories</button>
+            <CustomizedRightArrowStories />
+          </div>
+        </div>
+      </main>
+      <div>
+        <div className='viewContainer'>
+          <button className='view'>view the stories</button>
+          <CustomizedRightArrowStories />
+        </div>
+        <div className='designedBackground'>
+        </div>
+      </div>
     </>
   )
 }

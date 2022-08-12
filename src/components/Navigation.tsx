@@ -24,7 +24,7 @@ const Navigation = () => {
         <ul className='itemsContainer'>
 
           <li>
-            <Link className='navItem' to='/stories'>Stories</Link>
+            <Link className='navItem' to='/'>Stories</Link>
 
           </li>
           <li>

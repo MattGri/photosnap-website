@@ -31,7 +31,7 @@
             .text {
                 line-height: 25px;
                 margin-bottom: 50px;
-                
+
             }
 
             .inviteContainer {
@@ -61,5 +61,61 @@
         flex: 50%;
         background-image: url("../create-and-share.jpg");
         background-size: cover;
+    }
+}
+
+.wrapper {
+    display: flex;
+
+    .blackBackground {
+        background-color: black;
+
+        height: 600px;
+        width: 1160px;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: none;
+            background-image: url("../beautiful-stories.jpg");
+            background-size: cover;
+            background-position: center;
+            transition: 0.5s;
+
+        }
+    }
+
+    .storiesContainer {
+        padding: 135px 0px;
+        margin-left: 110px;
+
+
+        .title {
+            text-transform: uppercase;
+            line-height: 48px;
+            font-size: 40px;
+            letter-spacing: 4.17px;
+            margin-bottom: 30px;
+        }
+
+        .text {
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+
+        .viewContainer {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .view {
+        cursor: pointer;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border: none;
+        background-color: transparent;
+        font-weight: bold;
     }
 }
