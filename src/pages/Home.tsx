@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/home.scss';
 import { styled } from '@mui/material/styles';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const Home = () => {
+
+  useEffect(() => {
+    document.title = 'Home';
+  }, []);
 
 
   const CustomizedRightArrow = styled(ArrowRightAltIcon)`
@@ -69,16 +73,32 @@ const Home = () => {
           </div>
         </div>
       </main>
-      <div>
-        <div className='viewContainer'>
-          <button className='view'>view the stories</button>
-          <CustomizedRightArrowStories />
+      <section className='wrapperSection'>
+        <div className='designContainer'>
+          <div className='designs'>
+            <h2 className='title'>designed for
+              <br />
+              everyone
+            </h2>
+            <p className='text'>Photsnap can help you create stories that resonate
+              <br />
+              with your audience. Our tool is designed for
+              <br />
+              photographers of all levels, brands, and businesses you
+              <br />
+              name it.
+            </p>
+            <div className='viewContainer'>
+              <button className='view'>view the stories</button>
+              <CustomizedRightArrowStories />
+            </div>
+          </div>
         </div>
-        <div className='designedBackground'>
-        </div>
-      </div>
+        <div className='photoContainer'></div>
+      </section>
     </>
-  )
+  );
 }
+
 
 export default Home

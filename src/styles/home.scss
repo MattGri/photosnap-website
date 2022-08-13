@@ -72,14 +72,14 @@
 
         height: 600px;
         width: 1160px;
-        transition: 0.5s;
+        transition: 1s;
 
         &:hover {
             background-color: none;
             background-image: url("../beautiful-stories.jpg");
             background-size: cover;
             background-position: center;
-            transition: 0.5s;
+            transition: 1s;
 
         }
     }
@@ -106,16 +106,88 @@
         .viewContainer {
             display: flex;
             align-items: center;
+
+            .view {
+                cursor: pointer;
+                font-size: 12px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                border: none;
+                background-color: transparent;
+                font-weight: bold;
+
+                &:hover {
+                    text-decoration: underline;
+                    transition: 2s;
+                }
+            }
         }
     }
 
-    .view {
-        cursor: pointer;
-        font-size: 12px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        border: none;
-        background-color: transparent;
-        font-weight: bold;
+
+}
+
+.wrapperSection {
+    display: flex;
+
+    .designContainer {
+        padding: 150px 0px;
+
+        .designs {
+            margin-left: 110px;
+            width: 610px;
+
+            .title {
+                text-transform: uppercase;
+                line-height: 48px;
+                font-size: 40px;
+                letter-spacing: 4.17px;
+                margin-bottom: 30px;
+            }
+
+            .text {
+                font-size: 15px;
+                line-height: 25px;
+                margin-bottom: 30px;
+            }
+
+            .viewContainer {
+                display: flex;
+                align-items: center;
+
+                .view {
+                    cursor: pointer;
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    border: none;
+                    background-color: transparent;
+                    font-weight: bold;
+                    transition: 2s;
+
+                    &:hover {
+                        text-decoration: underline;
+                        transition: 2s;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .photoContainer {
+        background-color: black;
+        height: 600px;
+        width: 65%;
+
+        &:hover {
+            background-color: none;
+            background-image: url("../designed-for-everyone.jpg");
+            background-size: cover;
+            background-position: center;
+            transition: 1s;
+
+        }
     }
 }
