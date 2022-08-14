@@ -191,3 +191,208 @@
         }
     }
 }
+
+.boxContainer {
+    display: flex;
+
+    .box {
+        height: 600px;
+        width: 25%;
+        padding: 485px 0px 30px 0px;
+        position: relative;
+
+        .wrapperBox {
+            margin-left: 40px;
+
+
+            .title {
+                text-transform: uppercase;
+                color: $pureWhite;
+                font-size: 18px;
+            }
+
+            .text {
+                color: $pureWhite;
+                font-size: 13px;
+                margin-bottom: 15px;
+            }
+
+            .lineMountains {
+                position: absolute;
+                width: 350px;
+                height: 1px;
+                left: 40px;
+                bottom: 65px;
+                background: #FFFFFF;
+                opacity: 0.25;
+            }
+
+            .lineCityscapes {
+                position: absolute;
+                width: 350px;
+                height: 1px;
+                left: 40px;
+                bottom: 65px;
+                background: #FFFFFF;
+                opacity: 0.25;
+            }
+
+            .lineVoyage {
+                position: absolute;
+                width: 350px;
+                height: 1px;
+                left: 40px;
+                bottom: 65px;
+                background: #FFFFFF;
+                opacity: 0.25;
+            }
+
+            .lineArchitecture {
+                position: absolute;
+                width: 350px;
+                height: 1px;
+                left: 40px;
+                bottom: 65px;
+                background: #FFFFFF;
+                opacity: 0.25;
+            }
+
+            .read {
+                cursor: pointer;
+                text-transform: uppercase;
+                color: $pureWhite;
+                border: none;
+                background-color: transparent;
+                font-size: 12px;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+
+            .colorLine {
+                display: none;
+                position: absolute;
+                width: 475.5px;
+                height: 6px;
+                left: 0px;
+                bottom: -6px;
+                background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+            }
+
+            .colorLine2 {
+                display: none;
+                position: absolute;
+                width: 475.5px;
+                height: 6px;
+                left: 0px;
+                bottom: -6px;
+                background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+            }
+
+            .colorLine3 {
+                display: none;
+                position: absolute;
+                width: 475.5px;
+                height: 6px;
+                left: 0px;
+                bottom: -6px;
+                background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+            }
+
+            .colorLine4 {
+                display: none;
+                position: absolute;
+                width: 475.5px;
+                height: 6px;
+                left: 0px;
+                bottom: -6px;
+                background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+            }
+        }
+    }
+
+    .mountains {
+        background-image: url("../mountains.jpg");
+        background-size: cover;
+
+        &:hover {
+            position: relative;
+            bottom: 20px;
+        }
+
+        &:hover .colorLine {
+            display: block;
+        }
+
+    }
+
+    .cityscapes {
+        background-image: url("../cityscapes.jpg");
+        background-size: cover;
+
+        &:hover {
+            position: relative;
+            bottom: 20px;
+        }
+
+        &:hover .colorLine2 {
+            display: block;
+        }
+    }
+
+    .voyage {
+        background-image: url("../18-days-voyage.jpg");
+        background-size: cover;
+
+        &:hover {
+            position: relative;
+            bottom: 20px;
+        }
+
+        &:hover .colorLine3 {
+            display: block;
+        }
+    }
+
+    .architecturals {
+        background-image: url("../architecturals.jpg");
+        background-size: cover;
+
+        &:hover {
+            position: relative;
+            bottom: 20px;
+        }
+
+        &:hover .colorLine4 {
+            display: block;
+        }
+    }
+}
+
+.informationsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0px;
+
+    .box {
+        margin: 0px 20px;
+
+        .image {
+            display: block;
+            margin: 0px auto 50px auto;
+        }
+
+        .title {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .text {
+            color: $pureBlack;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+        }
+    }
+}
