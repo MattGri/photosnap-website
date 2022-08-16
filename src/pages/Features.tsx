@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/features.scss';
 import Beta from '../components/Beta';
 
 
 const Features = () => {
+
+    useEffect(() => {
+        document.title = 'Features';
+    } , []);
+
     return (
         <>
             <header className='wrapper'>

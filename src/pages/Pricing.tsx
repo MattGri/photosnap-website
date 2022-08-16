@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/pricing.scss';
 import Beta from '../components/Beta';
 import { Switch } from '@mui/material';
 
 const Pricing = () => {
+
+    useEffect(() => {
+        document.title = 'Pricing';
+    } , []);
 
     const [checked, setChecked] = useState(false);
 
