@@ -3,6 +3,7 @@
 
 .wrapper {
     display: flex;
+    
 
     .stories {
         background-color: $pureBlack;
@@ -85,7 +86,7 @@
     }
 
     .storiesContainer {
-        padding: 135px 0px;
+        padding: 135px 0px 0px 0px;
         margin-left: 110px;
 
 

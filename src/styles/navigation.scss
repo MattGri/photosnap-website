@@ -6,21 +6,31 @@
     justify-content: space-around;
     align-items: center;
 
+
+
     .wrapper {
         display: flex;
         align-items: center;
-        
+
+        @media(max-width: 768px) {
+            display: none;
+        }
+
 
         .logo {
             text-transform: uppercase;
             margin-left: 10px;
         }
     }
-    
+
 
     .itemsContainer {
         display: flex;
         list-style: none;
+
+        @media(max-width: 768px) {
+            display: none;
+        }
 
         .navItem {
             color: $pureBlack;
@@ -32,7 +42,7 @@
 
             &:hover {
                 color: $lightGrey;
-              transition: 0.15s;
+                transition: 0.15s;
             }
         }
     }
@@ -49,6 +59,10 @@
         border: none;
         transition: 0.15s;
         letter-spacing: 2px;
+
+        @media(max-width: 768px) {
+            display: none;
+        }
 
 
         &:hover {
