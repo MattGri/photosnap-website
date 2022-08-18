@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/navigation.scss';
 import { Link } from 'react-router-dom';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Navigation = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className='navigation'>
       <div className='wrapper'>
@@ -17,9 +22,12 @@ const Navigation = () => {
           </defs>
         </svg>
         <h4 className='logo'>photosnap</h4>
-
-
       </div>
+      <button className='menuIcon' onClick={() => setIsOpen((prev) => !prev)}>
+
+        {isOpen ? <CloseIcon /> : <MenuIcon />}
+      </button>
+
       <div>
         <ul className='itemsContainer'>
 
@@ -38,6 +46,27 @@ const Navigation = () => {
       <div>
         <button className='invite'>get an invite</button>
       </div>
+      {
+        isOpen && (
+          <div className='showMenus'>
+            <ul className='itemsContainers'>
+              <li>
+                <Link className='showNavItems' to='/'>Stories</Link>
+              </li>
+              <li>
+                <Link className='showNavItems' to='/features'>Features</Link>
+              </li>
+              <li>
+                <Link className='showNavItems' to='/pricing'>Pricing</Link>
+              </li>
+            </ul>
+            <span className='line'></span>
+            <div>
+              <button className='showInvites'>get an invite</button>
+            </div>
+          </div>
+        )
+      }
     </nav>
   )
 }

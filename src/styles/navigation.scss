@@ -6,20 +6,37 @@
     justify-content: space-around;
     align-items: center;
 
-
+    @media (max-width: 768px) {
+        justify-content: space-between;
+        padding: 10px 0px;
+        // height: auto;
+    }
 
     .wrapper {
         display: flex;
         align-items: center;
 
-        @media(max-width: 768px) {
-            display: none;
-        }
 
+        @media (max-width: 768px) {
+            margin-left: 25px;
+        }
 
         .logo {
             text-transform: uppercase;
             margin-left: 10px;
+        }
+    }
+
+    .menuIcon {
+        display: none;
+        cursor: pointer;
+        border: none;
+        background: none;
+
+        @media (max-width: 768px) {
+            display: block;
+            position: absolute;
+            right: 25px;
         }
     }
 
@@ -69,6 +86,76 @@
             background-color: $lightGrey;
             color: $pureBlack;
             transition: 0.15s;
+        }
+    }
+
+    .showMenus {
+        display: none;
+        // border: 1px solid $pureBlack;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        width: 100vw;
+        // height: 100%;
+        position: absolute;
+        background-color: #fff;
+        top: 70px;
+        padding: 30px 0px 35px 0px;
+
+        @media(max-width: 768px) {
+            display: block;
+        }
+
+        .itemsContainers {
+            list-style-type: none;
+            text-align: center;
+
+            li {
+                margin-bottom: 15px;
+            }
+        }
+
+        .showNavItems {
+            list-style: none;
+            text-decoration: none;
+            color: #000;
+            text-transform: uppercase;
+            font-size: 15px;
+            letter-spacing: 2.5px;
+            text-align: center;
+            font-weight: bold;
+            // margin-bottom: 25px;
+        }
+
+        .line {
+            /* Rectangle */
+            display: block;
+            // position: absolute;
+            width: 200px;
+
+            margin: 0 auto;
+            height: 1px;
+            // left: 33px;
+            // top: 140px;
+
+            background: #000000;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+
+        }
+
+        .showInvites {
+            display: block;
+            cursor: pointer;
+            margin: 15px auto;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 2.5px;
+            border: none;
+            background-color: $pureBlack;
+            width: 200px;
+            height: 48px;
         }
     }
 }
