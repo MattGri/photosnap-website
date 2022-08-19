@@ -3,13 +3,24 @@
 
 .wrapper {
     display: flex;
-    
+    flex-wrap: nowrap;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
 
     .stories {
         background-color: $pureBlack;
         padding: 170px 0px;
-        flex: 35%;
+        width: 42%;
         height: 650px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            order: 1;
+        }
 
         .line {
             position: absolute;
@@ -19,25 +30,62 @@
             top: 245px;
 
             background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+
+            @media (max-width: 768px) {
+                /* Rectangle */
+
+                position: absolute;
+                width: 128px;
+                height: 6px;
+                left: 29px;
+                top: 472px;
+
+                background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+
+            }
+
         }
 
         .container {
             margin-left: 105px;
 
+            @media (max-width: 768px) {
+                margin-left: 0px;
+            }
+
             .title {
                 line-height: 48px;
                 letter-spacing: 4.17px;
+
+                @media (max-width: 768px) {
+                    text-align: center;
+                    font-size: 32px;
+                    letter-spacing: 3.33px;
+                    line-height: 40px;
+                }
             }
 
             .text {
                 line-height: 25px;
                 margin-bottom: 50px;
 
+
+                @media (max-width: 768px) {
+                    text-align: center;
+                }
+
+                @media (max-width: 375px){
+                    font-size:  12px;
+                }
             }
 
             .inviteContainer {
                 display: flex;
-                // align-items: center;
+
+                @media (max-width: 768px) {
+
+                    justify-content: center;
+                }
 
                 .inviteButton {
                     color: $pureWhite;
@@ -53,15 +101,28 @@
                         text-decoration: underline;
                         transition: 2s;
                     }
+
+                    // @media (max-width: 768px){
+                    //     margin: 0 auto;
+                    // }
                 }
             }
         }
     }
 
     .photoContainer {
-        flex: 50%;
+        width: 58%;
         background-image: url("../create-and-share.jpg");
         background-size: cover;
+    }
+
+    @media (max-width: 768px) {
+        .photoContainer {
+            // flex: 100%;
+            width: 100%;
+            height: 400px;
+            background-position: center;
+        }
     }
 }
 
@@ -83,11 +144,28 @@
             transition: 1s;
 
         }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            background-color: none;
+            background-image: url("../beautiful-stories.jpg");
+            background-size: cover;
+            background-position: center;
+        }
     }
 
     .storiesContainer {
         padding: 135px 0px 0px 0px;
         margin-left: 110px;
+
+        @media (max-width: 768px) {
+            padding: 30px 0px 30px 0px;
+        }
+
+        @media (max-width: 425px) {
+            margin-left: 0px;
+            width: 100%;
+        }
 
 
         .title {
@@ -96,17 +174,34 @@
             font-size: 40px;
             letter-spacing: 4.17px;
             margin-bottom: 30px;
+
+            @media (max-width: 425px) {
+                text-align: center;
+                font-size: 32px;
+                letter-spacing: 3.33px;
+                line-height: 40px;
+            }
         }
 
         .text {
             font-size: 15px;
             line-height: 25px;
             margin-bottom: 30px;
+
+            @media (max-width: 425px) {
+                text-align: center;
+                font-size: 12px;
+                line-height: 20px;
+            }
         }
 
         .viewContainer {
             display: flex;
             align-items: center;
+
+            @media (max-width: 425px) {
+                justify-content: center;
+            }
 
             .view {
                 cursor: pointer;
@@ -131,12 +226,28 @@
 .wrapperSection {
     display: flex;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
     .designContainer {
         padding: 150px 0px;
+
+        @media (max-width: 768px) {
+            order: 1;
+            padding: 50px 0px;
+        }
+
 
         .designs {
             margin-left: 110px;
             width: 610px;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                margin-left: 0px;
+            }
+
 
             .title {
                 text-transform: uppercase;
@@ -144,17 +255,34 @@
                 font-size: 40px;
                 letter-spacing: 4.17px;
                 margin-bottom: 30px;
+
+                @media (max-width: 425px) {
+                    text-align: center;
+                    font-size: 32px;
+                    letter-spacing: 3.33px;
+                    line-height: 40px;
+                }
             }
 
             .text {
                 font-size: 15px;
                 line-height: 25px;
                 margin-bottom: 30px;
+
+                @media (max-width: 425px) {
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
             }
 
             .viewContainer {
                 display: flex;
                 align-items: center;
+
+                @media (max-width: 425px) {
+                    justify-content: center;
+                }
 
                 .view {
                     cursor: pointer;
@@ -182,6 +310,14 @@
         height: 600px;
         width: 65%;
 
+        @media (max-width: 768px) {
+            width: 100%;
+            background-color: none;
+            background-image: url("../designed-for-everyone.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
         &:hover {
             background-color: none;
             background-image: url("../designed-for-everyone.jpg");
@@ -196,20 +332,36 @@
 .boxContainer {
     display: flex;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
     .box {
         height: 600px;
         width: 25%;
         padding: 485px 0px 30px 0px;
         position: relative;
 
+        @media (max-width: 768px) {
+            width: 100%;
+            height: 450px;
+            padding: 0px 0px;
+        }
+
         .wrapperBox {
             margin-left: 40px;
+
+            @media (max-width: 768px) {
+                margin-top: 335px;
+            }
 
 
             .title {
                 text-transform: uppercase;
                 color: $pureWhite;
                 font-size: 18px;
+
+
             }
 
             .text {
@@ -226,6 +378,10 @@
                 bottom: 65px;
                 background: #FFFFFF;
                 opacity: 0.25;
+
+                @media (max-width: 425px) {
+                    width: 50%;
+                }
             }
 
             .lineCityscapes {
@@ -236,6 +392,10 @@
                 bottom: 65px;
                 background: #FFFFFF;
                 opacity: 0.25;
+
+                @media (max-width: 425px) {
+                    width: 50%;
+                }
             }
 
             .lineVoyage {
@@ -246,6 +406,10 @@
                 bottom: 65px;
                 background: #FFFFFF;
                 opacity: 0.25;
+
+                @media (max-width: 425px) {
+                    width: 50%;
+                }
             }
 
             .lineArchitecture {
@@ -256,6 +420,10 @@
                 bottom: 65px;
                 background: #FFFFFF;
                 opacity: 0.25;
+
+                @media (max-width: 425px) {
+                    width: 50%;
+                }
             }
 
             .read {
@@ -277,6 +445,8 @@
                 left: 0px;
                 bottom: -6px;
                 background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+
+
             }
 
             .colorLine2 {
@@ -324,6 +494,10 @@
             display: block;
         }
 
+        @media (max-width: 768px) {
+            background-position: center;
+        }
+
     }
 
     .cityscapes {
@@ -337,6 +511,10 @@
 
         &:hover .colorLine2 {
             display: block;
+        }
+
+        @media (max-width: 768px) {
+            background-position: center;
         }
     }
 
@@ -352,6 +530,10 @@
         &:hover .colorLine3 {
             display: block;
         }
+
+        @media (max-width: 768px) {
+            background-position: center;
+        }
     }
 
     .architecturals {
@@ -366,6 +548,10 @@
         &:hover .colorLine4 {
             display: block;
         }
+
+        @media (max-width: 768px) {
+            background-position: center;
+        }
     }
 }
 
@@ -375,8 +561,17 @@
     align-items: center;
     padding: 120px 0px;
 
+    @media(max-width: 768px) {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
     .box {
         margin: 0px 20px;
+
+        @media(max-width: 768px) {
+            width: 100%;
+        }
 
         .image {
             display: block;
@@ -394,6 +589,9 @@
             font-size: 15px;
             line-height: 25px;
             text-align: center;
+
+
+
         }
     }
 }
