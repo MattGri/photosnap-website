@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../styles/pricing.scss';
 import Beta from '../components/Beta';
 import { Switch } from '@mui/material';
+import DoneIcon from '@mui/icons-material/Done';
 
 const Pricing = () => {
 
     useEffect(() => {
         document.title = 'Pricing';
-    } , []);
+    }, []);
 
-    const [checked, setChecked] = useState(false);
+    const [checked, setChecked] = useState<boolean>(false);
 
 
     return (
@@ -79,7 +80,7 @@ const Pricing = () => {
                             {checked ? '$390.00' : '$39.00'}
                         </p>
                         <p className='month'>
-                            { checked ? 'per year' : 'per month'}
+                            {checked ? 'per year' : 'per month'}
                         </p>
                         <button className='plan'>pick plan</button>
                     </div>
@@ -101,7 +102,93 @@ const Pricing = () => {
                         <button className='plan'>pick plan</button>
                     </div>
                 </div>
+                <h2 className='compareTitle'>compare</h2>
+                <div style={{
+                    width: '731px',
+                    margin: '0 auto',
+                }}>
+                    <div className='titleRow'>
+                        <ul className='items'>
+                            <li className='item feature'>the features</li>
+                            <li className='item'>basic</li>
+                            <li className='item'>pro</li>
+                            <li className='item'>business</li>
+                        </ul>
+                    </div>
+                    <span className='titleLine'></span>
+                    <div className='wrapperss'>
+                        <h5 className='title'>unlimited story posting</h5>
+                        <DoneIcon className='checkIcons firstRow' />
+                        <DoneIcon className='checkIcon secondRow' />
+                        <DoneIcon className='checkIcon' />
+                    </div>
+                    <span className='line'></span>
+                    <div className='wrapperss'>
+                        <h5 className='title'>unlimited photo upload</h5>
+                        <DoneIcon className='first' />
+                        <DoneIcon className='checkIcon second' />
+                        <DoneIcon />
+                    </div>
+                    <span className='line'></span>
+                    <div className='wrapperss'>
+                        <h5 className='title' style={{
+                            flexBasis: '70%',
+                        }}>embeding custom content</h5>
+                        <DoneIcon style={{
 
+                            marginRight: '136px',
+                        }} />
+                        <DoneIcon style={{
+
+                        }} />
+                    </div>
+                    <span className='line'></span>
+                    <div className='wrappers' style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        // justifyContent: 'space-end',
+                    }}>
+                        <h5 className='title'>
+                            photo downloads
+                        </h5>
+                        <div style={{
+                            display: 'flex',
+                            // justifyContent: 'space-end',
+                            alignItems: 'center',
+                        }}>
+                            <DoneIcon  />
+                        </div>
+                    </div>
+                    <span className='line'></span>
+                    <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                    }}>
+                        <h5 style={{
+                            flexBasis: '70%',
+                        }}>customize metadata</h5>
+                        <DoneIcon style={{
+                            color: 'green',
+                            marginRight: '136px',
+                        }} />
+                        <DoneIcon style={{
+                            color: 'green',
+                        }} />
+                    </div>
+                    <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                    }}>
+                        <h5 style={{
+                            flexBasis: '92%',
+                        }}>
+                            photo downloads
+                        </h5>
+                        <DoneIcon style={{
+                            color: 'green',
+                        }} />
+                    </div>
+                </div>
             </main>
             <Beta />
         </>
