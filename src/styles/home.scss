@@ -101,10 +101,6 @@
                         text-decoration: underline;
                         transition: 2s;
                     }
-
-                    // @media (max-width: 768px){
-                    //     margin: 0 auto;
-                    // }
                 }
             }
         }
@@ -112,13 +108,12 @@
 
     .photoContainer {
         width: 58%;
-        background-image: url("../create-and-share.jpg");
+        background-image: url("../images/create-and-share.jpg");
         background-size: cover;
     }
 
     @media (max-width: 768px) {
         .photoContainer {
-            // flex: 100%;
             width: 100%;
             height: 400px;
             background-position: center;
@@ -138,7 +133,7 @@
 
         &:hover {
             background-color: none;
-            background-image: url("../beautiful-stories.jpg");
+            background-image: url("../images/beautiful-stories.jpg");
             background-size: cover;
             background-position: center;
             transition: 1s;
@@ -148,7 +143,7 @@
         @media (max-width: 768px) {
             width: 100%;
             background-color: none;
-            background-image: url("../beautiful-stories.jpg");
+            background-image: url("../images/beautiful-stories.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -316,7 +311,7 @@
 
         &:hover {
             background-color: none;
-            background-image: url("../designed-for-everyone.jpg");
+            background-image: url("../images/designed-for-everyone.jpg");
             background-size: cover;
             background-position: center;
             transition: 1s;
@@ -326,7 +321,7 @@
         @media (max-width: 768px) {
             width: 100%;
             background-color: none;
-            background-image: url("../designed-for-everyone.jpg");
+            background-image: url("../images/designed-for-everyone.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -488,7 +483,7 @@
     }
 
     .mountains {
-        background-image: url("../mountains.jpg");
+        background-image: url("../images/mountains.jpg");
         background-size: cover;
 
         &:hover {
@@ -507,7 +502,7 @@
     }
 
     .cityscapes {
-        background-image: url("../cityscapes.jpg");
+        background-image: url("../images/cityscapes.jpg");
         background-size: cover;
 
         &:hover {
@@ -525,7 +520,7 @@
     }
 
     .voyage {
-        background-image: url("../18-days-voyage.jpg");
+        background-image: url("../images/18-days-voyage.jpg");
         background-size: cover;
 
         &:hover {
@@ -543,7 +538,7 @@
     }
 
     .architecturals {
-        background-image: url("../architecturals.jpg");
+        background-image: url("../images/architecturals.jpg");
         background-size: cover;
 
         &:hover {
