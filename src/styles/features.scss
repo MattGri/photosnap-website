@@ -5,16 +5,12 @@
     flex-wrap: nowrap;
 
     @media(max-width: 768px) {
-        // flex-direction: column;
-        // align-items: center;
-        // justify-content: center;
         flex-wrap: wrap;
     }
 
     .features {
         background-color: $pureBlack;
         height: 490px;
-        // flex: 35%;
         width: 42%;
         padding: 175px 0px;
 
@@ -43,8 +39,6 @@
             background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
 
             @media (max-width: 768px) {
-                /* Rectangle */
-
                 position: absolute;
                 width: 128px;
                 height: 6px;
@@ -113,7 +107,6 @@
     }
 
     .heroImage {
-        // flex: 50%;
         width: 58%;
 
         @media (max-width: 1300px) {
@@ -156,8 +149,6 @@
         flex-wrap: wrap;
 
         @media(max-width: 768px) {
-            // flex-direction: column;
-            // align-items: center;
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 10px;

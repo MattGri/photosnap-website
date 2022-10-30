@@ -9,20 +9,20 @@ import Features from './pages/Features';
 import ErrorPage from './pages/ErrorPage';
 
 function App() {
-    return (
-        <Router>
-            <div className="App">
-                <Navigation />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path='/features' element={<Features />} />
-                    <Route path="/pricing" element={<Pricing />} />
-                    <Route path="*" element={<ErrorPage />} />
-                </Routes>
-                <Footer />
-            </div>
-        </Router>
-    );
+  return (
+    <Router>
+      <div className="App">
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
 export default App;
