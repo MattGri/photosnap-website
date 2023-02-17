@@ -5,7 +5,7 @@ A website about photography written by myself
 # Technologies 🔧
 
 - html
-- sass
+- scss
 - typescript
 - react 
 
