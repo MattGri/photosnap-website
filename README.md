@@ -1,5 +1,5 @@
 # Project Overview 🎉
-A website about photography written by myself 
+A website about photography that i wrote myself 
 
 
 # Technologies 🔧
