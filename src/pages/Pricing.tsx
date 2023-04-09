@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import '../styles/pricing.scss';
 import Beta from '../components/Beta';
 import { Switch } from '@mui/material';
-import DoneIcon from '@mui/icons-material/Done';
 
 const Pricing = () => {
   useEffect(() => {
