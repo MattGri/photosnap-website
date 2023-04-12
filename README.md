@@ -3,9 +3,9 @@ A website about photography that i wrote myself
 
 # Technologies 🔧
 
-- typescript
-- react
-- scss
+- Typescript
+- React
+- Scss
 
 # Screenshots 📺
 ![image](https://user-images.githubusercontent.com/61913031/185743083-806b2b7b-9a54-4eb5-b736-27dbf44a7eee.png)
