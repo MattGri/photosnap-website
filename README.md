@@ -1,13 +1,11 @@
 # Project Overview 🎉
 A website about photography that i wrote myself 
 
-
 # Technologies 🔧
 
-- html
-- scss
 - typescript
-- react 
+- react
+- scss
 
 # Screenshots 📺
 ![image](https://user-images.githubusercontent.com/61913031/185743083-806b2b7b-9a54-4eb5-b736-27dbf44a7eee.png)
@@ -21,4 +19,4 @@ If you have any issues, please let me know on mateusz.grzybowski98@gmail.com
 
 # Live 📍
 
-https://thunderous-florentine-0c5cb2.netlify.app/
+You can visit website here: https://thunderous-florentine-0c5cb2.netlify.app/
