@@ -7,6 +7,12 @@ A website about photography that i wrote myself
 - React
 - Scss
 
+# Installation 💾
+
+`git clone https://github.com/MattGri/photosnap-website.git`
+
+`npm install && npm start`
+
 # Screenshots 📺
 ![image](https://user-images.githubusercontent.com/61913031/185743083-806b2b7b-9a54-4eb5-b736-27dbf44a7eee.png)
 ![image](https://user-images.githubusercontent.com/61913031/185743088-86778a64-9050-472c-84ef-86f48c110304.png)
