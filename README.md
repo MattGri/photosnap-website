@@ -14,7 +14,7 @@ A website about photography that i wrote myself
 `npm install && npm start`
 
 # Screenshots 📺
-![image](https://user-images.githubusercontent.com/61913031/185743083-806b2b7b-9a54-4eb5-b736-27dbf44a7eee.png)
+![image](https://user-images.githubusercontent.com/61913031/232222882-c09edee8-4ae4-4e41-aee0-9fdb4e0b0ac2.png)
 ![image](https://user-images.githubusercontent.com/61913031/185743088-86778a64-9050-472c-84ef-86f48c110304.png)
 ![image](https://user-images.githubusercontent.com/61913031/185743097-b05cff16-883a-429b-9433-a4b3ab710cdf.png)
 ![image](https://user-images.githubusercontent.com/61913031/185743103-40f1c932-c71b-4597-98f9-311bf1ff5dcc.png)
