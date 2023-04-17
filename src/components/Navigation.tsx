@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/navigation.scss';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -48,19 +48,19 @@ const Navigation = () => {
       <div>
         <ul className="itemsContainer">
           <li>
-            <Link className="navItem" to="/">
+            <NavLink className="navItem" to="/">
               Stories
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="navItem" to="/features">
+            <NavLink className="navItem" to="/features">
               Features
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="navItem" to="/pricing">
+            <NavLink className="navItem" to="/pricing">
               Pricing
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -71,19 +71,19 @@ const Navigation = () => {
         <div className="showMenus">
           <ul className="itemsContainers">
             <li>
-              <Link className="showNavItems" to="/">
+              <NavLink className="showNavItems" to="/">
                 Stories
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="showNavItems" to="/features">
+              <NavLink className="showNavItems" to="/features">
                 Features
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="showNavItems" to="/pricing">
+              <NavLink className="showNavItems" to="/pricing">
                 Pricing
-              </Link>
+              </NavLink>
             </li>
           </ul>
           <span className="line"></span>

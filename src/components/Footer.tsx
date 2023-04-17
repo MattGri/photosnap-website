@@ -59,7 +59,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className="linkItem">
-              <Link className="link" to="/stories">
+              <Link className="link" to="/">
                 Stories
               </Link>
             </li>
