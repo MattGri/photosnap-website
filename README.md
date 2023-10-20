@@ -25,4 +25,4 @@ If you have any issues, please let me know on mateusz.grzybowski98@gmail.com
 
 # Live 📍
 
-You can visit website here: https://thunderous-florentine-0c5cb2.netlify.app/
+You can visit website here: https://photosnap-website-project.netlify.app/
