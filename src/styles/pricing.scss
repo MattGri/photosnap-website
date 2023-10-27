@@ -77,26 +77,27 @@
         justify-content: center;
         align-items: center;
 
+        @media (max-width: 960px) {
+            flex-direction: column;
+            gap: 50px;
+
+        }
+
+
+
         .box {
             margin: 0px 20px;
             width: 350px;
-
-            .line {
-                position: absolute;
-                width: 350px;
-                height: 6px;
-                left: 777px;
-                top: 769px;
-
-                background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
-
-            }
         }
 
         .side {
             background-color: #f5f5f5;
             padding: 40px 0px 40px 0px;
             height: 450px;
+
+            @media (max-width: 375px) {
+                width: 90%;
+            }
 
             .title {
                 text-align: center;
@@ -147,6 +148,10 @@
         .center {
             background-color: #000;
             padding: 80px 0px 70px 0px;
+
+            @media (max-width: 375px) {
+                width: 90%;
+            }
 
             .title {
                 color: #fff;

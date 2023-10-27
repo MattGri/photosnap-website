@@ -73,7 +73,6 @@ const Pricing = () => {
             <button className="plan">pick plan</button>
           </div>
           <div className="box center">
-            <span className="line"></span>
             <h3 className="title">Pro</h3>
             <p className="text">
               More advanced features available
