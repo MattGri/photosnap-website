@@ -1,2 +1,0 @@
-# photosnap-website
- 
