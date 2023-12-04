@@ -9,9 +9,9 @@ Website about photography
 
 # Installation 💾
 
-`git clone https://github.com/MattGri/photosnap-website.git`
-
-`npm install && npm start`
+1. Clone the repository `git clone https://github.com/MattGri/photosnap-website.git`
+2. Install dependencies `npm install`
+3. At the terminal run the command `npm start`
 
 # Screenshots 📺
 ![image](https://user-images.githubusercontent.com/61913031/232222882-c09edee8-4ae4-4e41-aee0-9fdb4e0b0ac2.png)
